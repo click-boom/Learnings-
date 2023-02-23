@@ -514,6 +514,9 @@ def tuple_op():
         1. Count
         2. Index
     """
+
+def dict_op():
+    return
 # garb()
 # assign()
 # conc()
@@ -526,8 +529,10 @@ def tuple_op():
 # str_op()
 # list_op()
 # tuple_op()
+# dict_op()
 
 """                 References:
     String operations: https://www.w3schools.com/python/python_ref_string.asp 
     List operations: https://www.w3schools.com/python/ref_list_append.asp
+    Tuple operations:
     """
