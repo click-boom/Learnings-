@@ -1,0 +1,13 @@
+""" 
+Escape characters: 
+    \'= single colon
+    \"= double colon
+    \\= backslash
+    \n= new line
+    \r= carriage return
+    \t= tab
+    \ooo= from oct value to normal
+    \xhh= from hex value to normal
+    \b= backspace
+    \f= form feed
+"""
