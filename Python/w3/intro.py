@@ -498,11 +498,13 @@ def tuple_op():
     print(type(thistuple), 'look at line 496')
 
     thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
-    print(thistuple.count(5), '           499')  # counts repeated elements
+    # counts repeated elements
+    print('count:', thistuple.count(5), '           499')
 
     thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)   # 1st occurance only
-    print(thistuple.index(5), '           499')
+    print('index:', thistuple.index(5), '           499')
 
+    print('len:', len(thistuple))
 
     """ To do any sort of CRUD thing in list first convert it to list, do the operation and reconvert to tuple
         printing of elements via indexing is also possble
@@ -513,10 +515,59 @@ def tuple_op():
     """ Operations:
         1. Count
         2. Index
+        3. len
     """
 
+
 def dict_op():
-    return
+    info = {
+        'name': 'Rohan',
+        'age': 20,
+        'classs': 13
+    }
+    y = info.copy()
+    print('copy:', y, '               528')
+
+    info.clear()
+    print('clear:', info, '           533')
+
+    a = ('key1', 'key2', 'key3')
+    y = ('Rohan')  # if y wasnt defined, the value would have been None
+    print('from keys:', dict.fromkeys(a, y), '           536,   look at 535')
+
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+    print('\nget:', car.get('brand'), '           543')
+    print('if key not exist, get:', car.get('brand1'), '           544')
+    print('if key not exist value can be specified, get:',
+          car.get('brand1', 'KIA'), '           545')
+    print('\nitems:', car.items(), '           547')  # gives list of tuples
+    car['price'] = 120000
+    print('items after update:', car.items(),
+          '           548')
+
+    print('\nkeys:', car.keys(), '           552')  # returns list
+
+    """ If given key not exist, throws error. if default value parameter passed ,returns that value
+         works same as list but needs key para, not index  """
+    print('\npopped value:', car.pop('price'), '           556')
+    # print('popped value:',car.pop('price1')) will give error
+    print('\npopitem value not available, default parameter added:',
+          car.pop('price1', 200000), '           559   look at 557')
+    print('dictionary after pop:', car)
+
+    # returns tuple of key-value pair
+    print('popitem:', car.popitem(), '           563 ')
+    print('dict after popitem:', car)
+    car.update({'brand': 'BMW'})
+    print('\nupdate:', car, '               565')
+
+    print('values:', car.values(), '            568')  # returns list
+
+
 # garb()
 # assign()
 # conc()
@@ -529,7 +580,7 @@ def dict_op():
 # str_op()
 # list_op()
 # tuple_op()
-# dict_op()
+dict_op()
 
 """                 References:
     String operations: https://www.w3schools.com/python/python_ref_string.asp 
