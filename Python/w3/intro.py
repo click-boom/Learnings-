@@ -580,7 +580,15 @@ def dict_op():
 # str_op()
 # list_op()
 # tuple_op()
-dict_op()
+# dict_op()
+#from_doc()
+
+def from_doc():
+    print('\nlist note:              218')
+    ls=[[]]*3
+    print(ls)
+    ls[0].append(1)
+    print(ls)
 
 """                 References:
     String operations: https://www.w3schools.com/python/python_ref_string.asp 
