@@ -1,10 +1,12 @@
-'_' can be used as a variable in terminal where it gives the value of last printed item 
-classic division always gives float
 NaN= Not a Number
+'_' can be used as a variable in terminal where it gives the value of last printed item 
+
+classic division always gives float
 Infinity= inf exists in float
-empty arg for float() gives 0.0
-indexing= negative hos wa positive, always, sano batw thulo tirw aako matrw print hunx
-multiplication and addition rule imlies on list
-
-
 divmod gives pair of div and mod value
+empty arg for float() gives 0.0
+
+indexing= negative hos wa positive, always, sano batw thulo tirw aako matrw print hunx
+if a[y: z], for +ve index, len=z-y,and for -ve len=y-z
+
+multiplication and addition rule imlies on list

@@ -568,6 +568,48 @@ def dict_op():
     print('values:', car.values(), '            568')  # returns list
 
 
+def from_doc():
+    print('\nlist note:              572')
+    ls = [[]]*3
+    print(ls)
+    ls[0].append(1)
+    print(ls)
+
+    # conversion of any type into base-10 integer
+    # syntax:int('value', base of the given value)
+    print('\n binary to decimal:', int('100', 2))
+    print('hex to decimal:', int('0x64', 16))
+    print('round off:', round(3.147, 2), '              582')
+
+    text = ('Put several strings within parentheses '
+            'to have them joined together.')
+    print('\n'+text)
+
+    seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+    print('enumerate:', list(enumerate(seasons)),
+          '                       589')   # returns list of tuples
+
+    print('removed prefix:', "rrRohan".removeprefix(
+        'rr'), '                             592')
+
+    print('removed suffix:', "Rohanrr".removesuffix(
+        'rr'), '                             596')
+
+
+""" 
+Common Sequence functions:
+in, not in 
+is , is  not
+concatenation
+multiple referencing
+indexing & slicing(also steps)
+len 
+min
+max
+count
+index
+ """
+
 # garb()
 # assign()
 # conc()
@@ -581,14 +623,8 @@ def dict_op():
 # list_op()
 # tuple_op()
 # dict_op()
-#from_doc()
+from_doc()
 
-def from_doc():
-    print('\nlist note:              218')
-    ls=[[]]*3
-    print(ls)
-    ls[0].append(1)
-    print(ls)
 
 """                 References:
     String operations: https://www.w3schools.com/python/python_ref_string.asp 
