@@ -1,4 +1,3 @@
-import java.io.IOException;
 public class book {
     // public static void main(String[] args) {
     // System.out.print("Hello java");
@@ -73,15 +72,36 @@ public class book {
     // println
 
     // public static void main(String[] args) {
-        // int x;
-        // x = 10;
-        // if (x == 10) {
-        // int y = 20;
-        // System.out.println("x and y" + x + "" + y);
-        // x = y * 2;
-        // }
-        // // y = 100; Error
-        // x = 100; // No error
+    // int x;
+    // x = 10;
+    // if (x == 10) {
+    // int y = 20;
+    // System.out.println("x and y" + x + "" + y);
+    // x = y * 2;
+    // }
+    // // y = 100; Error
+    // x = 100; // No error
 
-   
+    // public static void main(String[] args) throws java.io.IOException {
+        // System.out.print("Enter:");
+        // char ch= (char) System.in.read();
+        // System.out.println("Entered:"+ch);
+
+
+//Traditional Switch
+        // public static void main(String[] args) throws java.io.IOException {
+        // System.out.println("enter:");
+        // char ch = (char) System.in.read();
+        // switch (ch) {
+        //     case 'A':
+        //     case 'a': {
+        //         System.out.println("This is a");
+        //         break;
+        //     }
+        //     default:
+        //         System.out.println("Its nothing");
+        // }
+        public static void main(String[] args) throws java.io.IOException {
+            
+    }
 }
